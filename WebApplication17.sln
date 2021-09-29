@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieWeb.Api", "WebApplication17\MovieWeb.Api.csproj", "{8B3D23F1-F3AC-4310-9AA3-9BE9661CC41F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieWeb.Domain", "MovieWeb.Domain\MovieWeb.Domain.csproj", "{BC85AA1C-1B89-493F-94FB-194A82352F28}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieWeb.Dto", "MovieWeb.Dto\MovieWeb.Dto.csproj", "{2C7D0BEC-034B-4103-8459-1DA91733FBE8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieWeb.Database", "MovieWeb.Database\MovieWeb.Database.csproj", "{FBD62E99-B7A3-4598-A420-0CA3AC5B64DA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieWeb.Services", "MovieWeb.Services\MovieWeb.Services.csproj", "{0E871F6E-5078-4C4C-9B0F-3F369F7BAA19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieWeb.Client", "MovieWeb.Client\MovieWeb.Client.csproj", "{B027E928-AFC0-4500-A7A0-2B03B976F82D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B3D23F1-F3AC-4310-9AA3-9BE9661CC41F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B3D23F1-F3AC-4310-9AA3-9BE9661CC41F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B3D23F1-F3AC-4310-9AA3-9BE9661CC41F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B3D23F1-F3AC-4310-9AA3-9BE9661CC41F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC85AA1C-1B89-493F-94FB-194A82352F28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC85AA1C-1B89-493F-94FB-194A82352F28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC85AA1C-1B89-493F-94FB-194A82352F28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC85AA1C-1B89-493F-94FB-194A82352F28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C7D0BEC-034B-4103-8459-1DA91733FBE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C7D0BEC-034B-4103-8459-1DA91733FBE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C7D0BEC-034B-4103-8459-1DA91733FBE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C7D0BEC-034B-4103-8459-1DA91733FBE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBD62E99-B7A3-4598-A420-0CA3AC5B64DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBD62E99-B7A3-4598-A420-0CA3AC5B64DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBD62E99-B7A3-4598-A420-0CA3AC5B64DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBD62E99-B7A3-4598-A420-0CA3AC5B64DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E871F6E-5078-4C4C-9B0F-3F369F7BAA19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E871F6E-5078-4C4C-9B0F-3F369F7BAA19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E871F6E-5078-4C4C-9B0F-3F369F7BAA19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E871F6E-5078-4C4C-9B0F-3F369F7BAA19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B027E928-AFC0-4500-A7A0-2B03B976F82D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B027E928-AFC0-4500-A7A0-2B03B976F82D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B027E928-AFC0-4500-A7A0-2B03B976F82D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B027E928-AFC0-4500-A7A0-2B03B976F82D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2EE10F48-9783-4D78-B5E5-3B9661542E5D}
+	EndGlobalSection
+EndGlobal

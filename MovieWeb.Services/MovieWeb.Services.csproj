@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MovieWeb.Database\MovieWeb.Database.csproj" />
+    <ProjectReference Include="..\MovieWeb.Domain\MovieWeb.Domain.csproj" />
+    <ProjectReference Include="..\MovieWeb.Dto\MovieWeb.Dto.csproj" />
+  </ItemGroup>
+
+</Project>

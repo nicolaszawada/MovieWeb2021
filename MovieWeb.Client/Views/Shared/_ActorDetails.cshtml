@@ -1,0 +1,27 @@
+﻿@model MovieWeb.Client.Models.Actor.ActorDetailViewModel
+
+<h1>@Model.Name</h1>
+
+<strong>Kevin Bacon Number</strong>
+<p>@Model.KevinBaconNumber</p>
+
+<strong>Age</strong>
+<p>@CalculateAge(Model.BirthDate)</p>
+
+<img width="250" src="@Model.Photo"/>
+
+@functions{
+    int CalculateAge(DateTime birthDate)
+    {
+        // Save today's date.
+        var today = DateTime.Today;
+
+        // Calculate the age.
+        var age = today.Year - birthDate.Year;
+
+        // Go back to the year in which the person was born in case of a leap year
+        if (birthDate.Date > today.AddYears(-age)) age--;
+
+        return age;
+    }
+}

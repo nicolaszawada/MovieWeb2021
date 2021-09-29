@@ -1,0 +1,45 @@
+﻿@model MovieWeb.Client.Models.Movie.MovieIndexViewModel
+
+<h1>Films</h1>
+
+<form class="form-inline">
+    <div class="form-group mb-2">
+        <label for="staticEmail2" class="sr-only">Titel</label>
+        <input type="text" class="form-control" asp-for="Filter"/>
+    </div>
+    <button type="submit" class="btn btn-primary mb-2">Filter</button>
+    <a asp-controller="Movie" asp-action="Index">reset</a>
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th>Titel</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th><a class="no-hover" asp-controller="Movie" asp-action="Create">➕</a></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var movie in Model.Movies)
+        {
+        <tr>
+            <td>@movie.Title</td>
+            <td>
+                <a class="no-hover" asp-controller="Movie" asp-action="Details" asp-route-id="@movie.Id">🔎</a>
+            </td>
+            <td>
+                <a class="no-hover" asp-controller="Movie" asp-action="Edit" asp-route-id="@movie.Id">✏️</a>
+            </td>
+            <td>
+                <a class="no-hover" asp-controller="Movie" asp-action="Delete" asp-route-id="@movie.Id">🗑️</a>
+            </td>
+            <td></td>
+        </tr>
+        
+      
+    }
+        </tbody>
+    </table>

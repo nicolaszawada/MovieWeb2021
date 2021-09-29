@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MovieWeb.Database\MovieWeb.Database.csproj" />
+    <ProjectReference Include="..\MovieWeb.Domain\MovieWeb.Domain.csproj" />
+    <ProjectReference Include="..\MovieWeb.Dto\MovieWeb.Dto.csproj" />
+    <ProjectReference Include="..\MovieWeb.Services\MovieWeb.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\pics\" />
+  </ItemGroup>
+
+</Project>

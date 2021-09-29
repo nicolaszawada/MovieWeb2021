@@ -1,0 +1,19 @@
+﻿@model MovieWeb.Client.Models.Movie.MovieCreateViewModel
+
+<form method="post" asp-controller="Movie" asp-action="Create" >
+
+    <div class="form-group">
+        <label asp-for="Title"></label>
+        <input class="form-control" asp-for="Title" />
+        <span class="text-danger" asp-validation-for="Title"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Genre"></label>
+        <input class="form-control" asp-for="Genre" />
+        <span class="text-danger" asp-validation-for="Genre"></span>
+    </div>
+
+    <button class="btn btn-primary" type="submit">Aanmaken</button>
+    <a class="btn btn-secondary" asp-controller="Movie" asp-action="Index">Annuleren</a>
+</form>

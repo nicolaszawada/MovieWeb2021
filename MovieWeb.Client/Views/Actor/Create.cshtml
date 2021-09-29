@@ -1,0 +1,37 @@
+﻿@model MovieWeb.Client.Models.Actor.ActorCreateViewModel
+
+<form method="post" asp-controller="Actor" asp-action="Create" enctype="multipart/form-data">
+
+    <div class="form-group">
+        <label asp-for="FirstName"></label>
+        <input class="form-control" asp-for="FirstName" />
+        <span class="text-danger" asp-validation-for="FirstName"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="LastName"></label>
+        <input class="form-control" asp-for="LastName" />
+        <span class="text-danger" asp-validation-for="LastName"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="BirthDate"></label>
+        <input class="form-control" asp-for="BirthDate" />
+        <span class="text-danger" asp-validation-for="BirthDate"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="KevinBaconNumber"></label>
+        <input class="form-control" asp-for="KevinBaconNumber" />
+        <span class="text-danger" asp-validation-for="KevinBaconNumber"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Photo"></label>
+        <input class="form-control" asp-for="Photo" />
+        <span class="text-danger" asp-validation-for="Photo"></span>
+    </div>
+    <br />
+    <button class="btn btn-primary" type="submit">Aanmaken</button>
+    <a class="btn btn-secondary" asp-controller="Actor" asp-action="Index">Annuleren</a>
+</form>

@@ -1,0 +1,40 @@
+﻿@model MovieWeb.Client.Models.Actor.ActorListViewComponentViewModel
+
+<table>
+    <thead>
+        <tr>
+            <th>Naam</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th> @if (Model.Editable)
+            {<a class="no-hover" asp-controller="Actor" asp-action="Create">➕</a>}</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var actor in Model.Actors)
+        {
+            <tr>
+                <td>
+                    @actor.Name
+                </td>
+                <td>
+                    @if (Model.Editable)
+                    {<a class="no-hover" asp-controller="Actor" asp-action="Details" asp-route-id="@actor.Id">🔎</a>}
+                </td>
+                <td>
+                    @if (Model.Editable)
+                {
+                    <a class="no-hover" asp-controller="Actor" asp-action="Edit" asp-route-id="@actor.Id">✏️</a>
+                }
+                </td>
+                <td>
+                    @if (Model.Editable)
+                    {<a class="no-hover" asp-controller="Actor" asp-action="Delete" asp-route-id="@actor.Id">🗑️</a>}
+                </td>
+                <td>@if (Model.ShowPhoto)
+                {<img src="@actor.Photo" width="75"/>}</td>
+            </tr>
+        }
+    </tbody>
+</table>

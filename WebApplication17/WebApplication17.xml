@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MovieWeb.Api</name>
+    </assembly>
+    <members>
+        <member name="M:WebApplication17.Controllers.ActorsController.Get">
+            <summary>
+            Get list of actors 
+            </summary>
+            <returns>List of GetActorListDto</returns>
+        </member>
+        <member name="M:WebApplication17.Controllers.ActorsController.Get(System.Int32)">
+            <summary>
+            Get specific actor
+            </summary>
+            <param name="id">The database identifier</param>
+            <returns>An GetActorDetailDto</returns>
+        </member>
+    </members>
+</doc>
